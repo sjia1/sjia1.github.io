@@ -46,13 +46,13 @@ ul.posts li {
 
 <style>
 a:link {
-  color: green; 
+  color: blue; 
   background-color: transparent; 
   text-decoration: none;
 }
 
 a:visited {
-  color: blue;
+  color: red;
   background-color: transparent;
   text-decoration: none;
 }
