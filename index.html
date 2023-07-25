@@ -16,7 +16,6 @@
    <div class=”container”>
      <div class=”blurb”>
       <h1> Su Jia's peronsal website </h1>
-       <h2> My CMU website just expired. This website is under construction, apologies for the bad links and poor design.</h2>
   
 <p align="left"> I am an Assistant Research Professor (non-tenure-track) at the <a target= _blank href="https://datasciencecenter.cornell.edu"> Center for Data Science for Enterprise and Society </a> (CDSES), Cornell University. I am interested in data-driven decision-making for business problems. 
 More specifically, in terms of methodology, my research is focused on <em>online learning and optimization</em> -- an area that studies how to make informed decisions with a <em>stream</em> of data. In terms of applications,  I am interested in  marketing-related problems, such as advertising, pricing and recommendation.
@@ -32,6 +31,19 @@ from Stony Brook University, where I was fortunate to work on computational geom
 <p align="left"> I received the INFORMS Pierskalla Best Paper Award in Health Applications in 2021 and the INFORMS Dantzig Dissertation Award in Operations Research and Management Science in 2022. 
 Here is my <a target= _blank href="CV_SuJia_122122.pdf">CV</a>.
 
+<h3 align='left'> <b>PhD Thesis</b><br>
+          My work during my Phd focuses on online learning methodology for operations and marketing problems. Here is a 25-page condensed version of my thesis: 
+          <br> <a href = 'https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=tf1c4_kAAAAJ&citation_for_view=tf1c4_kAAAAJ:RHpTSmoSYBkC'> Learning and Earning Under Noise and Uncertainty. </a> 
+          <br>Committee: R. Ravi (Chair), Andrew A. Li, Alan Scheller-Wolf and Sridhar Tayur.
+          <br> <b style="color:DarkOrange;"> INFORMS Dantzig Dissertation Award</b>, 2022 
+          <br> 
+          <details>
+            <summary>Abstract</summary>
+             Sequential decision-making under uncertainty is central to a range of operations and marketing problems. In the face of an unknown environment, the decision-maker needs to strike a balance between learning the known environment (“learning”) and selecting nearly optimal decisions (“earning”). For instance, consider pricing a new product. If the retailer had full information about the demand at every price level, she could determine and select the revenue-maximizing price for the good. However, such information about the demand curve is typically not available in practice, so the seller needs to experiment with different prices to gain information about the demand curve, and then exploit this information by offering a near-optimal selling price.
+             The tradeoff between learning and optimization can be modelled as the Multi-Armed Bandits (MAB) problem, which has attracted significant attention from a range of communities in recent years, including machine learning, operations research and marketing. While most of the fundamental problems in this area have been theoretically well-understood, these algorithms have been rarely deployed in practice. In contrast, while marketing research on sequential decision making has been focused on the practical side, their results are usually empirical and lacking of rigorous analysis.
+             This thesis serves as a preliminary step towards filling this gap. We will consider practical sequential decision-making problems arising from some of the most fundamental marketing areas including survey design, pricing and content recommendation, and provide theoretical insights via provable performance guarantees.
+          </details> </h3>
+
 <section class="section my-work" data-section="section3">
         <div class="container">
           <div class="section-heading">
@@ -42,12 +54,29 @@ Here is my <a target= _blank href="CV_SuJia_122122.pdf">CV</a>.
         <h3>
         <li align="left"><a target= _blank href="https://arxiv.org/pdf/2301.12366.pdf">Smooth Non-stationary Bandits</a> </br>
         Su Jia, Qian Xie, Nathan Kallus and Peter Frazier</br>
-        Preliminary version appeared Fortieth International Conference on Machine Learning (ICML'23)</br> </li>
+        Preliminary version appeared Fortieth International Conference on Machine Learning (ICML'23)</br> 
+          <details>
+            <summary>Abstract</summary><h4>
+            In many applications of online decision making, the environment is non-stationary and it is therefore crucial to use bandit algorithms that handle changes. Most existing approaches are designed to protect against non-smooth changes, constrained only by total variation or Lipschitzness over time, where they guarantee T^2/3 regret. However, in practice environments are often changing smoothly, so such algorithms may incur higher-than-necessary regret in these settings and do not leverage information on the rate of change. 
+            We study a non-stationary two-arm bandit problem where we assume an arm’s mean reward is a &beta;-Holder function over (normalized) time, meaning it is (&beta;- 1)-times Lipschitz-continuously differentiable. We show the first
+            separation between the smooth and non-smooth regimes by presenting a policy with  
+            T^3/5 regret for &beta; = 2. We complement this result by a T^{(&beta;+1)/(2&beta;+1)} lower bound for any integer &beta; &geq; 1, which matches our upper bound for &beta; = 2.</h4>
+            <br><b>Key words:</b> non-stationary bandits, Holder class, non-parametric statistics 
+          </details>  
+        </li>
         <li align="left"><a target= _blank href="SLHV_bandits_ICML_submission.pdf"> Short-Lived High-Volume Multi-A(rmed)/B(andit) Testing </a> </br>
         Su Jia, Nishant Oli, Ian Anderson, Paul Duff, Andrew Li and R. Ravi. </br>
         Preliminary version appeared Fortieth International Conference on Machine Learning (ICML'23)</br>   </li>
+
         <li align="left"><a target= _blank href="https://proceedings.neurips.cc/paper_files/paper/2022/file/7a0f8055c838df8e62329a76c7c6403d-Paper-Conference.pdf"> Markdown Pricing for Unknown Parametric Demand Models. </a> </br> Su Jia, Andrew Li and R. Ravi. 
-        </br> Preliminary version appeared in the proceedings of Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS'22)</li>
+        </br> Preliminary version appeared in the proceedings of Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS'22)
+          <details>
+            <summary>Abstract</summary>
+            We consider a Continuum-Armed Bandit problem with an additional monotonicity constraint (or “markdown” constraint) on the actions selected. This problem faithfully models a natural revenue management problem, called ''markdown pricing'', where the objective is to adaptively reduce the price over a finite horizon to maximize the expected revenues. Prior to this work, a tight T^3/4 regret bound is known under minimal assumptions of unimodality and Lipschitzness in the reward function. This bound shows that markdown pricing is strictly harder than unconstrained dynamic pricing (i.e., without the monotonicity constraint), which admits T^2/3 regret under the same assumptions. However, in practice, demand functions are usually assumed to have certain functional forms (e.g. linear or exponential), rendering the demand learning easier and suggesting better regret bounds. In this work we introduce a concept, markdown dimension, that measures the complexity of a parametric family, and present optimal regret bounds that improve upon the previous T^3/4 bound under this framework.
+            <br><b>Key words:</b> markdown pricing, multi-armed bandits, monotonicity, parametric demand model
+          </details> 
+        </li>
+
         <li align="left"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3894600"> Toward A Liquid Biopsy: Approximation Algorithms for Adaptive Hypothesis Testing. </a> </br>
         Kyra Gan, Su Jia, Andrew Li and Sridhar Tayur. </br>
         Preliminary version appeared in the proceedings of Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS'21) </br> 
@@ -57,8 +86,21 @@ Here is my <a target= _blank href="CV_SuJia_122122.pdf">CV</a>.
         <b style="color:DarkOrange;"> Egon Balas Award </b> for best CMU student operations research paper, 2020
         </br> Under review,<i> Operations Research</i></li>
         <li align="left"><a target= _blank href="https://www.researchgate.net/publication/357753512_Optimal_Decision_Tree_and_Submodular_Function_Ranking_Under_Noisy_Outcomes">Optimal Decision Tree and Submodular Ranking with Noisy Outcomes. </a> </br> Su Jia, Fatemeh Navidi, Viswanath Nagarajan and R.Ravi.</br> <a target= _blank href="NIPS19_camera_ready_oct26.pdf">Preliminary version</a> appeared in the proceedings of Thirty-third Conference on Neural Information Processing Systems (NeurIPS'19) </br> Journal version submitted to <i>Operations Research</i></li>
+
         <li align="left"><a href = 'https://www.researchgate.net/profile/Su-Jia-11/publication/353447062_Effective_Online_Order_Acceptance_Policies_for_Omni-Channel_Fulfillment/links/60fdab541e95fe241a8a715a/Effective-Online-Order-Acceptance-Policies-for-Omni-Channel-Fulfillment.pdf'>
-        Effective Online Order Acceptance Policies for Omni-Channel Fulfillment. </a> </br> Su Jia, Jeremy Karp, R. Ravi and  Sridhar Tayur. </br><i>Manufacturing and Service Operations Management (M&SOM)</i> </li>
+        Effective Online Order Acceptance Policies for Omni-Channel Fulfillment. </a> </br> Su Jia, Jeremy Karp, R. Ravi and  Sridhar Tayur. </br>
+        <i>Manufacturing and Service Operations Management (M&SOM)</i>
+        <details>
+            <summary>Abstract</summary>
+            <em>Problem Definition</em>: Omni-channel retailing has led to the use of traditional stores as fulfillment centers for online orders. Omni-channel fulfillment problems have two components: (1) accepting a certain number of on-line orders prior to seeing store demands, and (2) satisfying (or filling) some of these accepted on-line demands as efficiently as possible with any leftover inventory after store demands have been met. Hence, there is a fundamental trade-off between store cancellations of accepted online orders and potentially increased profits due to more acceptances of online orders. We study this joint problem of online order acceptance and fulfillment (including cancellations) to minimize total costs, including shipping charges and cancellation penalties in single-period and limited multi-period settings.
+            <br> <em>Academic/Practical Relevance</em>: Despite the growing importance of omni-channel fulfillment via online orders, our work provides the first study incorporating cancellation penalties along with fulfillment costs. 
+            <br> <em>Methodology</em>: We build a two-stage stochastic model. In the first stage, the retailer sets a policy specifying which online orders it will accept. The second stage represents the process of fulfilling online orders once the uncertain quantities of in-store purchases are revealed. We analyze two classes of threshold policies that accept online orders as long as the inventories are above a global threshold, or a local threshold per region. 
+            <em>Results</em>: Total costs are unimodal as a function of the global threshold, and unimodal as a function of a single local threshold holding all other local thresholds at constant values, motivating a gradient search algorithm. Reformulating as an appropriate linear program with network flow structure, we estimate the derivative (using infinitesimal perturbation analysis) of the total cost as a function of the thresholds. We validate the performance of the threshold policies empirically using data from a high-end North American retailer. Our two-store experiments demonstrate that Local Thresholds perform better than Global Thresholds in a wide variety of settings. Conversely, in a narrow region with negatively correlated online demand between locations and very low shipping costs, Global Threshold outperforms Local Thresholds. A hybrid policy only marginally improves on the better of the two. In multiple periods, we study one- and two-location models and provide insights into effective solution methods for the general case.
+            <br> <em>Managerial Implications</em>: Our methods give an effective way to manage fulfillment costs for online orders, demonstrating a significant reduction compared to policies that treat each store separately, reflecting the significant advantage of incorporating shipping in computing thresholds.
+            <br><b>Key words:</b> Infinitesimal Perturbation Analsysis (IPA), Fulfillment Policy, Omni-channel retailing
+          </details>  
+        </li>
+
         <li align="left"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8056969">
         Competitive Analysis for Online Scheduling in Software-Defined Optical WAN. </a></br> Su Jia, Xin Jin, Golnaz Ghasemiesfeh, Jiaxin Ding and Jie Gao. </br> IEEE International Conference on Computer Communications 2017 (INFOCOM'17) </li>
         <li align="left"><a href="https://arxiv.org/pdf/1710.00876.pdf"> Network Optimization on Partitioned Pairs of Points.</a> </br> Esther Arkin, Aritra Banik, Paz Carmi, Gui Citovsky, Su Jia, Matthew Katz, Tyler Mayer and Joseph S. B. Mitchell </br> The 28th International Symposium on Algorithms and Computation (ISAAC'17) </li>
