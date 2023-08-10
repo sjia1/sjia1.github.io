@@ -19,35 +19,31 @@
 <a target= _blank href="https://www.cmu.edu/tepper/faculty-and-research/faculty-by-area/profiles/li-andrew.html"> Andrew Li</a>.
 <br></br>
 
-<align='left'> <b>PhD Thesis. </b> 
-          My doctoral research is primarily concentrated on <em>online learning and optimization</em> which studies strategies for making well-informed decisions with a <em>stream</em> of data. Here is a 25-page condensed version of my thesis: 
-          <br> <a href = 'https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=tf1c4_kAAAAJ&citation_for_view=tf1c4_kAAAAJ:RHpTSmoSYBkC'> Learning and Earning Under Noise and Uncertainty. </a> <br>
-          Committee: R. Ravi (Chair), Andrew A. Li, Alan Scheller-Wolf and Sridhar Tayur.<br> 
+<b>PhD Thesis. </b> 
+  My doctoral research is primarily concentrated on <em>online learning and optimization</em> which studies strategies for making well-informed decisions with a <em>stream</em> of data. Here is a 22-page condensed version of my thesis: 
+  <br> <a href = 'https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=tf1c4_kAAAAJ&citation_for_view=tf1c4_kAAAAJ:RHpTSmoSYBkC'> Learning and Earning Under Noise and Uncertainty. </a> <br>
+  Committee: R. Ravi (Chair), Andrew A. Li, Alan Scheller-Wolf and Sridhar Tayur. </br>
 
-
-
-<section class="section my-work" data-section="section3">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Full List of Publications and Preprints</h2>
-            <span> <div class="line-dec"></div>
-            <span>
-              <h4>Note: In case you wonder why some of my papers have not been submitted to CS conferences: Visa-related challenges have made traveling outside of the US a cumbersome process for me. </h4> 
-        <h3> 
-        <li align="left"><a target= _blank href="https://arxiv.org/pdf/2301.12366.pdf">Smooth Non-stationary Bandits</a> </br>
+<p align="left" style="black:blue;font-size:35px"> <b>Publications and Preprints</b> </p>
+Note: ''*'' means the authors are listed in alphabetical order.
+                <!-- <h4>Note 2: In case you wonder why some of my papers have not been submitted to CS conferences: Visa-related challenges have made traveling outside of the US a cumbersome process for me. </h4>  -->
+<ul>
+        <li align="left" style="color:black;font-size:22px"><a target= _blank href="https://arxiv.org/pdf/2301.12366.pdf">Smooth Non-stationary Bandits.</a> </br>
         Su Jia, Qian Xie, Nathan Kallus and Peter Frazier.</br>
-        Preliminary version appeared  in the proceedings of the ICML'23</br> 
+        Preliminary version appeared  in the proceedings of ICML'23</br> 
           <details>
-            <summary>Abstract</summary><h4>
+            <summary>Abstract</summary>  
             In many applications of online decision making, the environment is non-stationary and it is therefore crucial to use bandit algorithms that handle changes. Most existing approaches are designed to protect against non-smooth changes, constrained only by total variation or Lipschitzness over time, where they guarantee T^2/3 regret. However, in practice environments are often changing smoothly, so such algorithms may incur higher-than-necessary regret in these settings and do not leverage information on the rate of change. 
             We study a non-stationary two-arm bandit problem where we assume each arm's mean reward is a &beta;-Holder function over (normalized) time, meaning it is (&beta;- 1)-times Lipschitz-continuously differentiable. We show the first
             separation between the smooth and non-smooth regimes by presenting a policy with  
-            T^3/5 regret for &beta; = 2. We complement this result by a T^{(&beta;+1)/(2&beta;+1)} lower bound for any integer &beta; &geq; 1, which matches our upper bound for &beta; = 2.</h4>
+            T^3/5 regret for &beta; = 2. We complement this result by a T^{(&beta;+1)/(2&beta;+1)} lower bound for any integer &beta; &geq; 1, which matches our upper bound for &beta; = 2.
             <br><b>Key words:</b> non-stationary bandits, Holder class, non-parametric statistics 
           </details>  
         </li>
 
-        <li align="left"><a target= _blank href="SLHVB_camera_ready060923.pdf"> Short-Lived High-Volume Multi-A(rmed)/B(andit) Testing </a> </br>
+        <br></br>
+
+        <li align="left" style="color:black;font-size:22px"><a target= _blank href="SLHVB_camera_ready060923.pdf"> Short-Lived High-Volume Multi-A(rmed)/B(andit) Testing. </a> </br>
         Su Jia, Nishant Oli, Ian Anderson, Paul Duff, Andrew Li and R. Ravi. </br>
         Preliminary version appeared  in the proceedings of ICML'23</br>            
          <details> 
@@ -58,41 +54,53 @@
           </details> 
         </li>
 
-        <li align="left"><a target= _blank href="https://proceedings.neurips.cc/paper_files/paper/2022/file/7a0f8055c838df8e62329a76c7c6403d-Paper-Conference.pdf"> Markdown Pricing for Unknown Parametric Demand Models. </a> </br> Su Jia, Andrew Li and R. Ravi. 
+        <br></br>
+
+        <li align="left" style="color:black;font-size:22px">
+          <a target= _blank href="https://proceedings.neurips.cc/paper_files/paper/2022/file/7a0f8055c838df8e62329a76c7c6403d-Paper-Conference.pdf"> Markdown Pricing for Unknown Parametric Demand Models. </a> </br> Su Jia, Andrew Li and R. Ravi. 
         </br> Preliminary version appeared in the proceedings of NeurIPS'22
           <details>
             <summary>Abstract</summary>
-            We consider a Continuum-Armed Bandit problem with an additional monotonicity constraint (or “markdown” constraint) on the actions selected. This problem faithfully models a natural revenue management problem, called ''markdown pricing'', where the objective is to adaptively reduce the price over a finite horizon to maximize the expected revenues. Prior to this work, a tight T^3/4 regret bound is known under minimal assumptions of unimodality and Lipschitzness in the reward function. This bound shows that markdown pricing is strictly harder than unconstrained dynamic pricing (i.e., without the monotonicity constraint), which admits T^2/3 regret under the same assumptions. However, in practice, demand functions are usually assumed to have certain functional forms (e.g. linear or exponential), rendering the demand learning easier and suggesting better regret bounds. In this work we introduce a concept, markdown dimension, that measures the complexity of a parametric family, and present optimal regret bounds that improve upon the previous T^3/4 bound under this framework.
+            We consider a Continuum-Armed Bandit problem with an additional monotonicity constraint (or ''markdown'' constraint) on the actions selected. This problem faithfully models a natural revenue management problem, called ''markdown pricing'', where the objective is to adaptively reduce the price over a finite horizon to maximize the expected revenues. Prior to this work, a tight T^3/4 regret bound is known under minimal assumptions of unimodality and Lipschitzness in the reward function. This bound shows that markdown pricing is strictly harder than unconstrained dynamic pricing (i.e., without the monotonicity constraint), which admits T^2/3 regret under the same assumptions. However, in practice, demand functions are usually assumed to have certain functional forms (e.g. linear or exponential), rendering the demand learning easier and suggesting better regret bounds. In this work we introduce a concept, markdown dimension, that measures the complexity of a parametric family, and present optimal regret bounds that improve upon the previous T^3/4 bound under this framework.
             <br><b>Key words:</b> markdown pricing, multi-armed bandits, monotonicity, parametric demand model
           </details> 
         </li>
+        
+        <br></br>
 
-        <li align="left"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3894600"> Toward A Liquid Biopsy: Greedy Approximation Algorithms for Adaptive Hypothesis Testing. </a> </br>
-        Kyra Gan, Su Jia, Andrew Li and Sridhar Tayur. </br>
+        <li align="left" style="color:black;font-size:22px">
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3894600"> Toward A Liquid Biopsy: Greedy Approximation Algorithms for Adaptive Hypothesis Testing. </a> </br>
+        *Kyra Gan, Su Jia, Andrew Li and Sridhar Tayur. </br>
         Preliminary version appeared in the proceedings of NeurIPS'21 </br> 
         <b style="color:DarkOrange;"> Winner, INFORMS Pierskalla Best Paper Award 2021 </b> </br> Major revision, <i>Management Science</i>             
           <details>
             <summary>Abstract</summary>
-            This paper addresses a set of active learning problems that occur in the development of liquid biopsies via the lens of active sequential hypothesis testing (ASHT). In the problem of ASHT, a learner seeks to identify the true hypothesis from among a known set of hypotheses. The learner is given a set of actions and knows the random distribution of the outcome of any action under any true hypothesis. Given a target error &delta; > 0, the goal is to sequentially select the fewest number of actions so as to identify the true hypothesis with probability at least 1 − &delta;. Motivated by applications in which the number of hypotheses or actions is massive (e.g., genomics-based cancer detection), we propose efficient (greedy, in fact) algorithms and provide the first approximation guarantees for ASHT, under two types of adaptivity. Both of our guarantees are independent of the number of actions and logarithmic in the number of hypotheses. We numerically evaluate the performance of our algorithms using both synthetic and real-world DNA mutation data, demonstrating that our algorithms outperform previously proposed heuristic policies by large margins.
+            This paper addresses a set of active learning problems that occur in the development of liquid biopsies via the lens of active sequential hypothesis testing (ASHT). In the problem of ASHT, a learner seeks to identify the true hypothesis from among a known set of hypotheses. The learner is given a set of actions and knows the random distribution of the outcome of any action under any true hypothesis. Given a target error &delta; > 0, the goal is to sequentially select the fewest number of actions so as to identify the true hypothesis with probability at least 1 −&delta;. Motivated by applications in which the number of hypotheses or actions is massive (e.g., genomics-based cancer detection), we propose efficient greedy algorithms and provide the first approximation guarantees for ASHT, under two types of adaptivity. Both of our guarantees are independent of the number of actions and logarithmic in the number of hypotheses. We numerically evaluate the performance of our algorithms using both synthetic and real-world DNA mutation data, demonstrating that our algorithms outperform previously proposed heuristic policies by large margins.
             <br><b>Key words:</b> active learning, sequential hypothesis testing, approximation algorithms, cancer detection
           </details> 
         </li>
 
-        <li align="left"><a target= _blank href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3861379"> Conservative Price Experimentation: Markdown Pricing with Unknown Demand. </a> </br>
+        <br></br>
+
+        <li align="left" style="color:black;font-size:22px">
+          <a target= _blank href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3861379"> Conservative Price Experimentation: Markdown Pricing with Unknown Demand. </a> </br>
         Su Jia, Andrew Li and R. Ravi. </br>
-        <b style="color:DarkOrange;"> Egon Balas Award </b> for best CMU student operations research paper, 2020
-        </br> Under review,<i> Operations Research</i>
+        <b style="color:DarkOrange;"> Egon Balas Award </b> for best CMU student Operations Research paper, 2020
+        </br> Major revision,<i> Management Science</i>
             <details>
             <summary> Abstract</summary>
             We consider the Unimodal Multi-Armed Bandit problem where the goal is to find the optimal price under an unknown unimodal reward function, with an additional "markdown" constraint that requires that the price exploration is non-increasing. This markdown optimization problem faithfully models a single-product revenue management problem where the objective is to adaptively reduce the price over a finite sales horizon to maximize expected revenues.
             We measure the performance of an adaptive exploration-exploitation policy in terms of the regret: the revenue loss relative to the maximum revenue that could have been attained when the demand curve is known in advance. For the case of L-Lipschitz-bounded unimodal revenue functions with infinite inventory, we present a natural policy that explores the price space at a uniform optimal speed in T steps and has regret T^{3/4} (L log T)^{1/4}. 
-            On the other side, we provide an almost-matching lower bound of L^{1/4} T^{3/4} on the regret of any policy. Further, under mild assumptions, we show that the above tight bounds also hold when the inventory is finite but is on the order of &Omega;(T). 
-            <br> Our tight regret bounds highlight the additional complexity of the markdown constraint, and are asymptotically higher than the corresponding bounds without this markdown requirement of T^{1/2} for unimodal bandits and L^{1/3} T^{2/3} for $L$-Lipschitz bandits. We finally consider a generalization called Dynamic Pricing with Markup Penalty where the seller is allowed to increase the price by paying a markup penalty of magnitude T^c per markup where c&in; [0,1] is a given constant. We extend our results to a tight T^med{2/3, 3/4, c} regret bound for this variant (med{a,b,c} denotes the median of the a,b,c.)
+            On the other side, we provide an almost-matching lower bound of L^{1/4} T^{3/4} on the regret of any policy. Further, under mild assumptions, we show that the above tight bounds also hold when the inventory is finite but is on the order of &Omega;(T). Our tight regret bounds highlight the additional complexity of the markdown constraint, and are asymptotically higher than the corresponding bounds without this markdown requirement of T^{1/2} for unimodal bandits and L^{1/3} T^{2/3} for $L$-Lipschitz bandits. 
             <br><b>Key words:</b> Markdown Pricing, Multi-armed Bandits, Monotonicity, Unimodal Bandits
             </details> 
         </li>
 
-        <li align="left"><a target= _blank href="https://www.researchgate.net/publication/357753512_Optimal_Decision_Tree_and_Submodular_Function_Ranking_Under_Noisy_Outcomes">Optimal Decision Tree and Submodular Ranking with Noisy Outcomes. </a> </br> Su Jia, Fatemeh Navidi, Viswanath Nagarajan and R.Ravi.</br> <a target= _blank href="NIPS19_camera_ready_oct26.pdf">Preliminary version</a> appeared in the proceedings of NeurIPS'19 </br>             
+        <br></br>
+
+        <li align="left" style="color:black;font-size:22px">
+          <a target= _blank href="https://www.researchgate.net/publication/357753512_Optimal_Decision_Tree_and_Submodular_Function_Ranking_Under_Noisy_Outcomes">Optimal Decision Tree and Submodular Ranking with Noisy Outcomes. </a> </br> Su Jia, Fatemeh Navidi, Viswanath Nagarajan and R.Ravi.</br> 
+          <a target= _blank href="NIPS19_camera_ready_oct26.pdf">Preliminary version</a> appeared in the proceedings of NeurIPS'19 </br>             
             <details>
             <summary> Abstract</summary>
             A fundamental task in active learning involves performing a sequence of tests to identify an unknown hypothesis that is drawn from a known distribution. This problem, known as optimal decision tree induction, has been widely studied for decades and the asymptotically best-possible approximation algorithm has been devised for it. We study a generalization where certain test outcomes are noisy, even in the more general case when the noise is persistent, i.e., repeating a test gives the same noisy output, disallowing simple repetition as a way to gain confidence. We design new approximation algorithms for both the non-adaptive setting, where the test sequence must be fixed a-priori, and the adaptive setting where the test sequence depends on the outcomes of prior tests. Previous work in the area assumed at most a logarithmic number of noisy outcomes per hypothesis and provided approximation ratios that depended on parameters such as the minimum probability of a hypothesis. Our new approximation algorithms provide guarantees that are nearly best-possible and work for the general case of a large number of noisy outcomes per test or per hypothesis where the performance degrades smoothly with this number. Our results adapt and generalize methods used for submodular ranking and stochastic set cover. We evaluate the performance of our algorithms on two natural applications with noise: toxic chemical identification and active learning of linear classifiers. Despite our theoretical logarithmic approximation guarantees, our methods give solutions with cost very close to the information theoretic minimum, demonstrating the effectiveness of our methods.
@@ -100,37 +108,48 @@
             </details> 
         </li>
 
-        <li align="left"><a href = 'https://www.researchgate.net/profile/Su-Jia-11/publication/353447062_Effective_Online_Order_Acceptance_Policies_for_Omni-Channel_Fulfillment/links/60fdab541e95fe241a8a715a/Effective-Online-Order-Acceptance-Policies-for-Omni-Channel-Fulfillment.pdf'>
-        Effective Online Order Acceptance Policies for Omni-Channel Fulfillment. </a> </br> Su Jia, Jeremy Karp, R. Ravi and  Sridhar Tayur. </br>
+        <br></br>
+
+        <li align="left" style="color:black;font-size:22px">
+          <a href = 'https://www.researchgate.net/profile/Su-Jia-11/publication/353447062_Effective_Online_Order_Acceptance_Policies_for_Omni-Channel_Fulfillment/links/60fdab541e95fe241a8a715a/Effective-Online-Order-Acceptance-Policies-for-Omni-Channel-Fulfillment.pdf'>
+        Effective Online Order Acceptance Policies for Omni-Channel Fulfillment. </a> </br> *Su Jia, Jeremy Karp, R. Ravi and  Sridhar Tayur. </br>
         <i>Manufacturing and Service Operations Management (M&SOM)</i>
         <details>
             <summary>Abstract</summary>
-            <em>Problem Definition</em>: Omni-channel retailing has led to the use of traditional stores as fulfillment centers for online orders. Omni-channel fulfillment problems have two components: (1) accepting a certain number of on-line orders prior to seeing store demands, and (2) satisfying (or filling) some of these accepted on-line demands as efficiently as possible with any leftover inventory after store demands have been met. Hence, there is a fundamental trade-off between store cancellations of accepted online orders and potentially increased profits due to more acceptances of online orders. We study this joint problem of online order acceptance and fulfillment (including cancellations) to minimize total costs, including shipping charges and cancellation penalties in single-period and limited multi-period settings.
-            <br> <em>Academic/Practical Relevance</em>: Despite the growing importance of omni-channel fulfillment via online orders, our work provides the first study incorporating cancellation penalties along with fulfillment costs. 
-            <br> <em>Methodology</em>: We build a two-stage stochastic model. In the first stage, the retailer sets a policy specifying which online orders it will accept. The second stage represents the process of fulfilling online orders once the uncertain quantities of in-store purchases are revealed. We analyze two classes of threshold policies that accept online orders as long as the inventories are above a global threshold, or a local threshold per region. 
-            <em>Results</em>: Total costs are unimodal as a function of the global threshold, and unimodal as a function of a single local threshold holding all other local thresholds at constant values, motivating a gradient search algorithm. Reformulating as an appropriate linear program with network flow structure, we estimate the derivative (using infinitesimal perturbation analysis) of the total cost as a function of the thresholds. We validate the performance of the threshold policies empirically using data from a high-end North American retailer. Our two-store experiments demonstrate that Local Thresholds perform better than Global Thresholds in a wide variety of settings. Conversely, in a narrow region with negatively correlated online demand between locations and very low shipping costs, Global Threshold outperforms Local Thresholds. A hybrid policy only marginally improves on the better of the two. In multiple periods, we study one- and two-location models and provide insights into effective solution methods for the general case.
-            <br> <em>Managerial Implications</em>: Our methods give an effective way to manage fulfillment costs for online orders, demonstrating a significant reduction compared to policies that treat each store separately, reflecting the significant advantage of incorporating shipping in computing thresholds.
+            <b>Problem Definition</b>: Omni-channel retailing has led to the use of traditional stores as fulfillment centers for online orders. Omni-channel fulfillment problems have two components: (1) accepting a certain number of on-line orders prior to seeing store demands, and (2) satisfying (or filling) some of these accepted on-line demands as efficiently as possible with any leftover inventory after store demands have been met. Hence, there is a fundamental trade-off between store cancellations of accepted online orders and potentially increased profits due to more acceptances of online orders. We study this joint problem of online order acceptance and fulfillment (including cancellations) to minimize total costs, including shipping charges and cancellation penalties in single-period and limited multi-period settings.
+            <br> <b>Academic/Practical Relevance</b>: Despite the growing importance of omni-channel fulfillment via online orders, our work provides the first study incorporating cancellation penalties along with fulfillment costs. 
+            <br> <b>Methodology</b>: We build a two-stage stochastic model. In the first stage, the retailer sets a policy specifying which online orders it will accept. The second stage represents the process of fulfilling online orders once the uncertain quantities of in-store purchases are revealed. We analyze two classes of threshold policies that accept online orders as long as the inventories are above a global threshold, or a local threshold per region. 
+            <b>Results</b>: Total costs are unimodal as a function of the global threshold, and unimodal as a function of a single local threshold holding all other local thresholds at constant values, motivating a gradient search algorithm. Reformulating as an appropriate linear program with network flow structure, we estimate the derivative (using infinitesimal perturbation analysis) of the total cost as a function of the thresholds. We validate the performance of the threshold policies empirically using data from a high-end North American retailer. Our two-store experiments demonstrate that Local Thresholds perform better than Global Thresholds in a wide variety of settings. Conversely, in a narrow region with negatively correlated online demand between locations and very low shipping costs, Global Threshold outperforms Local Thresholds. A hybrid policy only marginally improves on the better of the two. In multiple periods, we study one- and two-location models and provide insights into effective solution methods for the general case.
+            <br> <b>Managerial Implications</b>: Our methods give an effective way to manage fulfillment costs for online orders, demonstrating a significant reduction compared to policies that treat each store separately, reflecting the significant advantage of incorporating shipping in computing thresholds.
             <br><b>Key words:</b> Infinitesimal Perturbation Analsysis (IPA), Fulfillment Policy, Omni-channel retailing
           </details>  
         </li>
 
-        <li align="left"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8056969">
+        <br></br>
+
+        <li align="left" style="color:black;font-size:22px">
+          <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8056969">
         Competitive Analysis for Online Scheduling in Software-Defined Optical WAN. </a></br> Su Jia, Xin Jin, Golnaz Ghasemiesfeh, Jiaxin Ding and Jie Gao. </br> IEEE International Conference on Computer Communications 2017 (INFOCOM'17) </li>
-        <li align="left"><a href="https://arxiv.org/pdf/1710.00876.pdf"> Network Optimization on Partitioned Pairs of Points.</a> </br> Esther Arkin, Aritra Banik, Paz Carmi, Gui Citovsky, Su Jia, Matthew Katz, Tyler Mayer and Joseph S. B. Mitchell </br> The 28th International Symposium on Algorithms and Computation (ISAAC'17) </li>
-        <li align="left"><a target= _blank href="wrp_with_tlb.pdf" > Geometric Tours to Visit and View Polygons Subject to Time Lower Bounds. (Manuscript) </a></br> Su Jia and Joseph S. B. Mitchell. </li>
-        <li align="left"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/11232">Deep Manifold Learning of Symmetric Positive Definite Matrices with Application to Face Recognition. </a> </br> Zhen Dong, Su Jia, Chi Zhang, Tianfu Wu and Mingtao Pei. </br> Thirty-First AAAI Conference on Artificial Intelligence (AAAI'17) </li>
-        <li align="left"><a href="https://d1wqtxts1xzle7.cloudfront.net/55171371/TWTSP-libre.pdf?1512149349=&response-content-disposition=inline%3B+filename%3DApproximation_Algorithms_for_Time_Window.pdf&Expires=1690308005&Signature=HsuPQ40P3I1XdQ5C8RFEJ0GJIXgj4pkQAi9HL8SKOaJb5GfqyXqeg-JFChvt89iOw8qg8pApPMRIIqPFxNai82sv-RufB5dSVg7XsFu8OJNQOtK4WfvrJAId5pEN6VTZjqamiRCNl6vydpG1-tGemhOQenA5BLVngxDHZyKNuNAkMyffxzruWZAwe2DoV6LughD56c5oT~LYye20M7W6vbtvMtXIM1CQW~sdPsRCG4KzRyDoPPj6GK-XB3y~emGx-4EHQTolBYsq6-ytGuiqMhJmCysDsSkLDYnlxBzwkVe~UPLBX6CB1F-c36VJfOP89OSZfapy9MECNynjJ53hrQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA">Exact and Approximation Algorithms for Time-Window TSP and Prize Collecting Problem. </a> </br> 
+
+        <br></br>
+        <li align="left" style="color:black;font-size:22px">
+          <a href="https://arxiv.org/pdf/1710.00876.pdf"> Network Optimization on Partitioned Pairs of Points.</a> </br> *Esther Arkin, Aritra Banik, Paz Carmi, Gui Citovsky, Su Jia, Matthew Katz, Tyler Mayer and Joseph S. B. Mitchell </br> The 28th International Symposium on Algorithms and Computation (ISAAC'17) </li>
+        
+        <br></br>
+
+        <li align="left" style="color:black;font-size:22px">
+          <a href="https://ojs.aaai.org/index.php/AAAI/article/view/11232">Deep Manifold Learning of Symmetric Positive Definite Matrices with Application to Face Recognition. </a> </br> Zhen Dong, Su Jia, Chi Zhang, Tianfu Wu and Mingtao Pei. </br> Thirty-First AAAI Conference on Artificial Intelligence (AAAI'17) </li>
+        
+        <br></br>
+
+       <li align="left" style="color:black;font-size:22px">
+        <a href="https://d1wqtxts1xzle7.cloudfront.net/55171371/TWTSP-libre.pdf?1512149349=&response-content-disposition=inline%3B+filename%3DApproximation_Algorithms_for_Time_Window.pdf&Expires=1690308005&Signature=HsuPQ40P3I1XdQ5C8RFEJ0GJIXgj4pkQAi9HL8SKOaJb5GfqyXqeg-JFChvt89iOw8qg8pApPMRIIqPFxNai82sv-RufB5dSVg7XsFu8OJNQOtK4WfvrJAId5pEN6VTZjqamiRCNl6vydpG1-tGemhOQenA5BLVngxDHZyKNuNAkMyffxzruWZAwe2DoV6LughD56c5oT~LYye20M7W6vbtvMtXIM1CQW~sdPsRCG4KzRyDoPPj6GK-XB3y~emGx-4EHQTolBYsq6-ytGuiqMhJmCysDsSkLDYnlxBzwkVe~UPLBX6CB1F-c36VJfOP89OSZfapy9MECNynjJ53hrQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA">Exact and Approximation Algorithms for Time-Window TSP and Prize Collecting Problem. </a> </br> 
 	      Su Jia, Jie Gao, Joseph S. B. Mitchell and Lu Zhao.  </br> International Workshop on the Algorithmic Foundations of Robotics 2016 (WAFR'16) </li>
-        <li align="left"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/10445">Face Video Retrieval via Deep Learning of Binary Hash Representations. </a> </br> Zhen Dong, Su Jia, Chi Zhang, Tianfu Wu and Mingtao Pei. </br> Thirtieth AAAI Conference on Artificial Intelligence (AAAI'16) </li>
-        </ol>
-		</span></h3>
-     
- </div>
-   </div>
-   <footer>
-   <ul>
-     <li><a href=”mailto:YOUREMAIL”>sj693@cornell.edu</a></li>
-   </ul>
-   </footer>
+        
+        <br></br>
+       <li align="left" style="color:black;font-size:22px">
+        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/10445">Face Video Retrieval via Deep Learning of Binary Hash Representations. </a> </br> Zhen Dong, Su Jia, Chi Zhang, Tianfu Wu and Mingtao Pei. </br> Thirtieth AAAI Conference on Artificial Intelligence (AAAI'16) </li>
+        
+</ul>
  </body>
 </html
