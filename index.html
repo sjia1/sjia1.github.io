@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
  <head>
-   <title>Su Jia</title>
+   <title align="right">Su Jia</title>
    <link rel="stylesheet" href="css/styles.css">
  </head>
  <body>
    <div class=”container”>
      <div class=”blurb”>
       <h1> Su Jia</h1>
-  
-<img src="ithaca_falls_in_the_fall.jpg" alt="waterfall" align="right" width="325" height="560"/>
+
+<!--
+<figure align="right">
+  <img src="ithaca_falls_in_the_fall.jpg"  width="325" height="560"/>
+  <figcaption>An elephant at sunset</figcaption>
+</figure>  
+-->
+
+<img src="ithaca_falls_in_the_fall.jpg" align="right" width="325" height="560"/>
+
+
 <!-- <p ><h4 align="right">Caption: Ithaca falls in the fall</h4></p> -->
 
 <p align="left"> I am an Assistant Research Professor (non-tenure-track) in the <a target= _blank href="https://datasciencecenter.cornell.edu"> Center for Data Science for Enterprise and Society </a> (CDSES) at Cornell University. Broadly speaking, my academic focus is primarily centered on applied probability and discrete optimization problems inspired by real-world business scenarios. Specifically, my recent work revolves around <em>online controlled experiments</em>, often referred to as <em>A/B testing</em>. In terms of applications, I am interested in revenue mangement and healthcare.<br> 
 
 <p align="left"> My research has been recognized by the INFORMS Pierskalla Best Paper Award in Health Applications in 2021 and the Dantzig Dissertation Award in Operations Research and Management Science in 2022. Here is my <a target= _blank href="CV_SuJia_080923.pdf">CV</a>.</p>
-
 
 <p align="left"> I received my BS degree in Mathematics </a> from Tsinghua University and MS degree from Stony Brook University where I worked with <a target= _blank href="http://www.ams.sunysb.edu/~jsbm/jsbm.html" > Joseph Mitchell</a> and
 <a target= _blank href="https://sites.rutgers.edu/jie-gao/about/" > Jie Gao</a>. I earned my PhD degree in <a target= _blank href="http://aco.math.cmu.edu" > Algorithms, Combinatorics and Optimization (ACO) </a> from CMU, advised by
@@ -40,7 +48,7 @@
             We study a non-stationary two-arm bandit problem where we assume each arm's mean reward is a &beta;-Holder function over (normalized) time, meaning it is (&beta;- 1)-times Lipschitz-continuously differentiable. We show the first
             separation between the smooth and non-smooth regimes by presenting a policy with  
             T^3/5 regret for &beta; = 2. We complement this result by a T^{(&beta;+1)/(2&beta;+1)} lower bound for any integer &beta; &geq; 1, which matches our upper bound for &beta; = 2.
-            <br><b>Key words:</b> non-stationary bandits, Holder class, non-parametric statistics 
+            <br><b>Key words:</b> non-stationary bandits, Holder class, non-parametric statistics, smoothness 
           </details>  
         </li>
 
@@ -54,7 +62,7 @@
             Modern platforms leverage randomized experiments to make informed decisions from a given set of items or ''treatments''. As a particularly challenging scenario, these treatments may (i) arrive in high volume, with thousands of new items being released per hour, and (ii) have short lifetime, say, due to the contents' transient nature or underlying non-stationarity that impels the learner to perceive the same item as distinct copies over time. <br></br>
             Thus motivated, we study a Bayesian multiple-play bandits problem that encapsulates the key features of multi-variate testing with a high-volume of short-lived treatments. In each round, a set of k actions (treatments) arrive, each available for $w$ rounds. Without knowing the mean reward of the actions, the learner selects a multiset of n actions and immediately observes their realized rewards. We aim to minimize the loss due to not knowing the mean rewards, averaged over instances generated from a given prior. We show that when k = O(n^&rho;) for some constant &rho;>0$, our proposed policy has n^{-\min {&rho;, 1/2 + O(1/w)} loss on a sufficiently large class of prior distributions. We complement this result by showing that every policy suffers n^{-\min {&rho;, 1/2}} loss on the same class of distributions.<br></br>
             We further validate the effectiveness of our policy through a large-scale field experiment on <a target= _blank href="https://www.glance.com"> Glance</a>, a content card-serving platform that faces exactly the above challenge. A simple variant of our policy outperforms their incumbent DNN-based recommender by 4 - 8% in user engagement.
-            <br><b>Key words:</b> field experiment, experimental design, short-Lived, high-volume, multi-play bandits, recommender systems 
+            <br><b>Key words:</b> A/B testing, Bayesian bandits, field experiment, experimental design, recommender systems, ephemeral marketing, website optimization 
           </details> 
         </li>
 
@@ -123,7 +131,7 @@
             <br> <b>Methodology</b>: We build a two-stage stochastic model. In the first stage, the retailer sets a policy specifying which online orders it will accept. The second stage represents the process of fulfilling online orders once the uncertain quantities of in-store purchases are revealed. We analyze two classes of threshold policies that accept online orders as long as the inventories are above a global threshold, or a local threshold per region. 
             <b>Results</b>: Total costs are unimodal as a function of the global threshold, and unimodal as a function of a single local threshold holding all other local thresholds at constant values, motivating a gradient search algorithm. Reformulating as an appropriate linear program with network flow structure, we estimate the derivative (using infinitesimal perturbation analysis) of the total cost as a function of the thresholds. We validate the performance of the threshold policies empirically using data from a high-end North American retailer. Our two-store experiments demonstrate that Local Thresholds perform better than Global Thresholds in a wide variety of settings. Conversely, in a narrow region with negatively correlated online demand between locations and very low shipping costs, Global Threshold outperforms Local Thresholds. A hybrid policy only marginally improves on the better of the two. In multiple periods, we study one- and two-location models and provide insights into effective solution methods for the general case.
             <br> <b>Managerial Implications</b>: Our methods give an effective way to manage fulfillment costs for online orders, demonstrating a significant reduction compared to policies that treat each store separately, reflecting the significant advantage of incorporating shipping in computing thresholds.
-            <br><b>Key words:</b> Infinitesimal Perturbation Analsysis (IPA), Fulfillment Policy, Omni-channel retailing
+            <br><b>Key words:</b> Omni-channel retailing, Infinitesimal Perturbation Analsysis (IPA), Fulfillment Policy 
           </details>  
         </li>
 
@@ -131,7 +139,13 @@
 
         <li align="left" style="color:black;font-size:22px">
           <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8056969">
-        Competitive Analysis for Online Scheduling in Software-Defined Optical WAN. </a></br> Su Jia, Xin Jin, Golnaz Ghasemiesfeh, Jiaxin Ding and Jie Gao. </br> IEEE International Conference on Computer Communications 2017 (INFOCOM'17) </li>
+        Competitive Analysis for Online Scheduling in Software-Defined Optical WAN. </a></br> Su Jia, Xin Jin, Golnaz Ghasemiesfeh, Jiaxin Ding and Jie Gao. </br> IEEE International Conference on Computer Communications 2017 (INFOCOM'17) 
+        <details>
+            <summary>Abstract</summary> Modern planetary-scale online services have massive data to transfer over the <em>wide area network </em> (WAN). Due to the tremendous cost of building WANs and the stringent timing requirement of distributed applications, it is critical for network operators to make efficient use of network resources to optimize data transfers. By leveraging <em> software-defined networking </em> (SDN) and reconfigurable optical devices, recent solutions design centralized systems to jointly control the network layer and the optical layer.<br> While these solutions show it is promising to significantly reduce data transfer times by centralized cross-layer control, they do not have any theoretical guarantees on the proposed algorithms. This paper presents approximation algorithms and theoretical analysis for the online transfer scheduling problem over optical WANs. The goal of the scheduling problem is to minimize the makespan (the time to finish all transfers) or the total sum of completion times. We design and analyze various greedy, online scheduling algorithms that are 3-competitive for makespan, 2-competitive for minimum sum completion time for jobs of unit size, and 3-competitive for jobs of arbitrary transfer size and each node having degree constraint d, where \alpha = 1 when d = 1 and \alpha = 1.86 when d>=2. We also evaluate the performance of these algorithms and compare the performance with prior heuristics.           
+            <br><b>Key words:</b> online algorithm, competitive analysis, scheduling, Wide Area Networks (WAN), Software-defined Networking (SDN)
+          </details>  
+
+        </li>
 
         <br></br>
         <li align="left" style="color:black;font-size:22px">
