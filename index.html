@@ -38,24 +38,45 @@
 <p align="left" style="black:blue;font-size:35px"> <b>Publications and Preprints</b> </p>
   <h4>"*" means alphabetical order</h4>  
 <ul>
-        <li align="left" style="color:black;font-size:22px"><a target= _blank href="https://arxiv.org/abs/2310.19220">From Stream to Pool: Dynamic Pricing with Unit-Demand Customers.</a> </br>
-        *Titing Cui, Su Jia and Thomas Lavastida.</br>
+        <li align="left" style="color:black;font-size:22px"><a target= _blank href="https://arxiv.org/abs/2312.15574"> Clustered Switchback Experiments: Near-Optimal Rates Under Spatiotemporal Interference</a> </br>
+        Su Jia, Nathan Kallus and Christina Lee Yu</br>
         Under review</br> 
           <details>
             <summary>Abstract</summary>  
-            Dynamic pricing under uncertainty is often formulated as a multi-armed bandit model where a <b>stream</b> of customers arrive sequentially, each with an i.i.d. valuation drawn from an unknown distribution. However, this formulation is not entirely reflective of the real world. In numerous retail scenarios such as fashion clothing and electronic goods, customers with high valuations tend to make purchases earlier and subsequently leave the market, leading to a gradual <i>shift</i> in the valuation distribution towards the lower end. 
-            Thus motivated, we consider a single-item revenue maximization problem where a <b>pool</b> of unit-demand, non-strategic customers interact repeatedly with a seller. 
-            Each customer monitors the price intermittently according to an independent Poisson process and makes a purchase if she observes a price lower than her valuation, whereupon she leaves the market permanently. 
-            As the main challenge, the valuations of the customers are unknown but come from a given family of instances. We present an efficient algorithm that computes a non-adaptive policy whose expected revenue is at least 1/k times the optimum where k is the number of prices. This result is <i>optimal</i>: We show that there exists a family of instances on k prices such that no algorithm guarantees more than $1/k$ fraction of optimal revenue.
-            Furthermore, the output of our algorithm also guarantees a $1/log &rho;$ fraction of the optimum where &rho; is the aspect ratio, i.e., the ratio of the highest and lowest prices. Finally, we propose a learn-then-earn type policy with n^3/4 regret, i.e., the loss due to not knowing the true valuations.
+            We consider experimentation in the presence of non-stationarity, inter-unit (spatial) interference, and carry-over effects (temporal interference), where we wish to estimate the global average treatment effect (GATE), the difference between average outcomes having exposed all units at all times to treatment or to control. 
+            We suppose spatial interference is described by a graph, where a unit's outcome depends on its neighborhood's treatment assignments, and that temporal interference is described by a hidden Markov decision process, where the transition kernel under either treatment (action) satisfies a rapid mixing condition. We propose a clustered switchback design, where units are grouped into clusters and time steps are grouped into blocks and each whole cluster-block combination is assigned a single random treatment. 
+            Under this design, we show that for graphs that admit good clustering, a truncated exposure-mapping Horvitz-Thompson estimator achieves 1/NT mean-squared error (MSE), matching a 1/NT lower bound up to logarithmic terms. Our results simultaneously generalize the N=1 setting of Hu, Wager 2022 (and improves on the MSE bound shown therein for difference-in-means estimators) as well as the T=1 settings of Ugander et al 2013 and Leung 2022. Simulation studies validate the favorable performance of our approach.
+            <br><b>Key words:</b> online controlled experiments, switchback experiments, A/B testing, Horvitz-Thompson estimator, Markov chain, off-policy evaluation
+          </details>  
+        </li>
+
+        <br></br>
+        <li align="left" style="color:black;font-size:22px"><a target= _blank href="https://arxiv.org/pdf/2402.01845.pdf"> Multi-Armed Bandits with Interference </a> </br>
+        Su Jia, Peter Frazier and Nathan Kallus</br>
+        Under review</br> 
+          <details>
+            <summary>Abstract</summary>  Experimentation with interference poses a significant challenge in contemporary online platforms. Prior research on experimentation with interference has concentrated on the final output of a policy. The cumulative performance, while equally crucial, is less well understood. To address this gap, we introduce the problem of <i>Multi-armed Bandits with Interference</i> (MABI), where the learner assigns an arm to each of $N$ experimental units over a time horizon of T rounds. The reward of each unit in each round depends on the treatments of <b>all</b> units, where the influence of a unit  decays in the spatial distance between units. Furthermore, we employ a general setup wherein the reward functions are chosen by an adversary and may vary arbitrarily across rounds and units. We first show that switchback policies achieve an optimal <b>expected</b> regret T^{1/2} against the best fixed-arm policy. Nonetheless, the regret (as a random variable) for any switchback policy suffers a high variance, as it does not account for N. We propose a cluster randomization policy whose regret (i) is optimal in <b>expectation</b> and (ii) admits a high probability bound that vanishes in N.
+            <br><b>Key words:</b> adversarial bandits, network interference, A/B testing, online experiments
+          </details>  
+        </li>
+
+        <br></br>
+        <li align="left" style="color:black;font-size:22px"><a target= _blank href="https://arxiv.org/abs/2310.19220">From Stream to Pool: Dynamic Pricing for Customers with Diminishing Marginal Utility</a> </br>
+        *Titing Cui, Su Jia and Thomas Lavastida</br>
+        Under review</br> 
+          <details>
+            <summary>Abstract</summary>  
+            Dynamic pricing models often formulated as a <b>stream</b> model where customer interactions occur sequentially, wherein the customer's valuation is drawn independently. However, this model is not entirely reflective of the real world, as it overlooks a critical aspect - the law of diminishing marginal utility - which states that a customer's marginal utility from each additional unit declines. 
+            This causes a tendency for the valuation distribution to shift towards the lower end, which is not captured by the stream model. This motivates us to study the following model.  Given a <b>pool</b> of customers who interact repeatedly with a monopolist seller, each of whose valuation diminishes in the number of purchases she has made, according to a discount function. 
+            In particular, when the discount function is constant, our pool model recovers the stream model. We focus on the most fundamental special case, where a customer's valuation becomes zero once a purchase is made. Given k prices, we present a non-adaptive, detail-free (i.e., does not ''know'' the valuation distribution) that achieves an optimal (among non-adaptive policies) $1/k$ competitive ratio. Furthermore, based on a novel debiasing technique, we propose an adaptive learn-then-earn policy with an O(k^{1/3} n^{2/3}) regret.
             <br><b>Key words:</b> revenue mangement, dynamic pricing, optimization under uncertainty, Poisson process, multi-armed bandits
           </details>  
         </li>
 
         <br></br>
-        <li align="left" style="color:black;font-size:22px"><a target= _blank href="https://arxiv.org/pdf/2301.12366.pdf">Smooth Non-stationary Bandits.</a> </br>
-        Su Jia, Qian Xie, Nathan Kallus and Peter Frazier.</br>
-        Preliminary version appeared in the proceedings of ICML'23. </br>
+        <li align="left" style="color:black;font-size:22px"><a target= _blank href="https://arxiv.org/pdf/2301.12366.pdf">Smooth Non-stationary Bandits</a> </br>
+        Su Jia, Qian Xie, Nathan Kallus and Peter Frazier</br>
+        Preliminary version appeared in the proceedings of ICML'23</br>
         Under review, <i>Operations Research</i></br> 
           <details>
             <summary>Abstract</summary>  
@@ -69,9 +90,9 @@
 
         <br></br>
 
-        <li align="left" style="color:black;font-size:22px"><a target= _blank href="SLHVB_camera_ready060923.pdf"> Short-Lived High-Volume Multi-A(rmed)/B(andit) Testing. </a> </br>
-        Su Jia, Nishant Oli, Ian Anderson, Paul Duff, Andrew Li and R. Ravi. </br>
-        Preliminary version appeared in the proceedings of ICML'23. </br>
+        <li align="left" style="color:black;font-size:22px"><a target= _blank href="SLHVB_camera_ready060923.pdf"> Short-Lived High-Volume Multi-A(rmed)/B(andit) Testing </a> </br>
+        Su Jia, Nishant Oli, Ian Anderson, Paul Duff, Andrew Li and R. Ravi</br>
+        Preliminary version appeared in the proceedings of ICML'23 </br>
         Under review, <i>Operations Research</i></br>            
          <details> 
             <summary>Abstract</summary>
@@ -85,8 +106,8 @@
         <br></br>
 
         <li align="left" style="color:black;font-size:22px">
-          <a target= _blank href="https://proceedings.neurips.cc/paper_files/paper/2022/file/7a0f8055c838df8e62329a76c7c6403d-Paper-Conference.pdf"> Markdown Pricing for Unknown Parametric Demand Models. </a> </br> Su Jia, Andrew Li and R. Ravi. 
-        </br> Preliminary version appeared in the proceedings of NeurIPS'22. </br>
+          <a target= _blank href="https://proceedings.neurips.cc/paper_files/paper/2022/file/7a0f8055c838df8e62329a76c7c6403d-Paper-Conference.pdf"> Markdown Pricing for Unknown Parametric Demand Models  </a> </br> Su Jia, Andrew Li and R. Ravi
+        </br> Preliminary version appeared in the proceedings of NeurIPS'22 </br>
         Under review, <i>Management Science</i></br>  
           <details>
             <summary>Abstract</summary>
@@ -98,8 +119,8 @@
         <br></br>
 
         <li align="left" style="color:black;font-size:22px">
-          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3894600"> Toward A Liquid Biopsy: Greedy Approximation Algorithms for Adaptive Hypothesis Testing. </a> </br>
-        *Kyra Gan, Su Jia, Andrew Li and Sridhar Tayur. </br>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3894600"> Toward A Liquid Biopsy: Greedy Approximation Algorithms for Adaptive Hypothesis Testing </a> </br>
+        *Kyra Gan, Su Jia, Andrew Li and Sridhar Tayur </br>
         Preliminary version appeared in the proceedings of NeurIPS'21</br> 
         <b style="color:DarkOrange;"> Winner, INFORMS Pierskalla Best Paper Award 2021 </b> </br> Major revision, <i>Management Science</i>             
           <details>
@@ -112,21 +133,21 @@
         <br></br>
 
         <li align="left" style="color:black;font-size:22px">
-          <a target= _blank href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3861379"> Conservative Price Experimentation: Markdown Pricing with Unknown Demand. </a> </br>
-        Su Jia, Andrew Li and R. Ravi. </br>
+          <a target= _blank href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3861379"> Conservative Price Experimentation: Markdown Pricing with Unknown Demand</a> </br>
+        Su Jia, Andrew Li and R. Ravi </br>
         <b style="color:DarkOrange;"> Egon Balas Award </b> for best CMU student Operations Research paper, 2020
         </br> Major revision,<i> Management Science</i>
             <details>
             <summary> Abstract</summary>
             We consider a variant of the Continuum-Armed Bandit problem where the arm sequence is required to be non-increasing. This problem faithfully models a single-product revenue management problem where the objective is to <em>reduce</em> the price over a finite sales horizon to maximize expected revenue. A policy that satisfies this monotonicity constraint is often called a <em>markdown</em> policy. We focus on the scenario where the demand model is unknown. A policy's performance is measured by the <em>regret</em>, i.e., the revenue loss due to not knowing the true demand function. We first observe that to achieve sublinear regret, it is necessary to assume that the revenue function (defined as the product of the price and the mean demand) is unimodal and Lipschitz. We then present a markdown policy that explores prices monotonically before a certain stopping condition is satisfied, and show that it has L^{1/4} \min(n,m)^{3/4} regret for any inventory level m, number of time periods n, and Lipschitz constant L.  This bound is nearly optimal: We  prove that no markdown policy achieves o(L^{1/4}\min(m,n)^{3/4}) regret for all m, n. In contrast, under the same assumptions, the optimal regret is L^{1/3} n^{2/3} <b>without</b> monotonicity for m=\infty, which is asymptotically lower. We also consider a variant where price increases are allowed but subject a limited budget. We present a policy with O(log n) price increases and L^{1/3} \min(m,n)^{2/3} regret, which matches the optimal regret without monotonicity.
-            <br><b>Key words:</b> Markdown Pricing, Multi-armed Bandits, Monotonicity, Unimodal Bandits
+            <br><b>Key words:</b> markdown Pricing, multi-armed bandits, monotonicity, unimodal bandits
             </details> 
         </li>
 
         <br></br>
 
         <li align="left" style="color:black;font-size:22px">
-          <a target= _blank href="https://www.researchgate.net/publication/357753512_Optimal_Decision_Tree_and_Submodular_Function_Ranking_Under_Noisy_Outcomes">Optimal Decision Tree and Submodular Ranking with Noisy Outcomes. </a> </br> Su Jia, Fatemeh Navidi, Viswanath Nagarajan and R.Ravi.</br> 
+          <a target= _blank href="https://www.researchgate.net/publication/357753512_Optimal_Decision_Tree_and_Submodular_Function_Ranking_Under_Noisy_Outcomes">Optimal Decision Tree and Submodular Ranking with Noisy Outcomes </a> </br> Su Jia, Fatemeh Navidi, Viswanath Nagarajan and R.Ravi</br> 
           <a target= _blank href="NIPS19_camera_ready_oct26.pdf">Preliminary version</a> appeared in the Proceedings of NeurIPS'19 </br>
           Under review, <i> Journal of Machine Learning Research</i>
             <details>
@@ -140,7 +161,7 @@
 
         <li align="left" style="color:black;font-size:22px">
           <a href = 'https://www.researchgate.net/profile/Su-Jia-11/publication/353447062_Effective_Online_Order_Acceptance_Policies_for_Omni-Channel_Fulfillment/links/60fdab541e95fe241a8a715a/Effective-Online-Order-Acceptance-Policies-for-Omni-Channel-Fulfillment.pdf'>
-        Effective Online Order Acceptance Policies for Omni-Channel Fulfillment. </a> </br> *Su Jia, Jeremy Karp, R. Ravi and  Sridhar Tayur. </br>
+        Effective Online Order Acceptance Policies for Omni-Channel Fulfillment</a> </br> *Su Jia, Jeremy Karp, R. Ravi and  Sridhar Tayur</br>
         <i>Manufacturing and Service Operations Management (M&SOM)</i>
         <details>
             <summary>Abstract</summary>
@@ -157,7 +178,7 @@
 
         <li align="left" style="color:black;font-size:22px">
           <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8056969">
-        Competitive Analysis for Online Scheduling in Software-Defined Optical WAN. </a></br> Su Jia, Xin Jin, Golnaz Ghasemiesfeh, Jiaxin Ding and Jie Gao. </br> IEEE International Conference on Computer Communications 2017 (INFOCOM'17) 
+        Competitive Analysis for Online Scheduling in Software-Defined Optical WAN</a></br> Su Jia, Xin Jin, Golnaz Ghasemiesfeh, Jiaxin Ding and Jie Gao </br> IEEE International Conference on Computer Communications 2017 (INFOCOM'17) 
         <details>
             <summary>Abstract</summary> Modern planetary-scale online services have massive data to transfer over the <em>wide area network </em> (WAN). Due to the tremendous cost of building WANs and the stringent timing requirement of distributed applications, it is critical for network operators to make efficient use of network resources to optimize data transfers. By leveraging <em> software-defined networking </em> (SDN) and reconfigurable optical devices, recent solutions design centralized systems to jointly control the network layer and the optical layer.<br> While these solutions show it is promising to significantly reduce data transfer times by centralized cross-layer control, they do not have any theoretical guarantees on the proposed algorithms. This paper presents approximation algorithms and theoretical analysis for the online transfer scheduling problem over optical WANs. The goal of the scheduling problem is to minimize the makespan (the time to finish all transfers) or the total sum of completion times. We design and analyze various greedy, online scheduling algorithms that are 3-competitive for makespan, 2-competitive for minimum sum completion time for jobs of unit size, and 3-competitive for jobs of arbitrary transfer size and each node having degree constraint d, where \alpha = 1 when d = 1 and \alpha = 1.86 when d>=2. We also evaluate the performance of these algorithms and compare the performance with prior heuristics.           
             <br><b>Key words:</b> online algorithm, competitive analysis, scheduling, Wide Area Networks (WAN), Software-defined Networking (SDN)
