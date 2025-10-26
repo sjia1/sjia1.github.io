@@ -1,13 +1,21 @@
+/* Global page settings */
 body {
     margin: 60px auto;
     width: 70%;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
 }
+
+/* Navigation and footer */
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    font-family: inherit;
+    padding: 0;
     list-style: none;
     font-weight: bold;
 }
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
@@ -17,90 +25,98 @@ a {
     text-decoration: none;
     color: #999;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
+/* Headings */
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-} 
+    font-family: inherit;
+    margin-bottom: 0.5em;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: 0.5em;
+}
+
+/* Paragraphs */
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
-} 
+    margin-bottom: 1em;
+}
+
+/* Footer */
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+/* Generic unordered lists */
+ul.posts, ul {
+    margin: 20px 0 40px;
+    padding-left: 0;
 }
 
-ul.posts li {
+ul.posts li, ul li {
     list-style: none;
+    margin-bottom: 1em;
 }
 
-
-<style>
-a:link {
-  color: blue; 
-  background-color: transparent; 
-  text-decoration: none;
+/* Publications section */
+.publications {
+    margin-left: 0;
+    padding-left: 0;
 }
 
-a:visited {
-  color: purple;
-  background-color: transparent;
-  text-decoration: none;
+.publications li {
+    margin-bottom: 1.5em;
+    text-align: left;
 }
 
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
+.publications details {
+    margin-top: 0.5em;
+    font-size: 16px; /* match body font */
+    font-family: inherit;
 }
 
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
+.publications summary {
+    font-weight: bold;
+    cursor: pointer;
 }
-</style>
 
-<!-- <style>
-a {
-  color: blue;
-}
-</style> -->
-
+/* Details / summary styling */
 details {
-  font:
-    16px "Open Sans",
-    Calibri,
-    sans-serif;
-  width: 620px;
+    width: 620px;
+    font-family: inherit;
 }
 
 details > summary {
-  padding: 2px 6px;
-  width: 15em;
-  background-color: #ddd;
-  border: none;
-  box-shadow: 3px 3px 4px blue;
-  cursor: pointer;
+    padding: 2px 6px;
+    width: auto;
+    background-color: #ddd;
+    border: none;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 details > p {
-  border-radius: 0 0 10px 10px;
-  background-color: #ddd;
-  padding: 2px 6px;
-  margin: 0;
-  box-shadow: 3px 3px 4px black;
+    border-radius: 0 0 10px 10px;
+    background-color: #eee;
+    padding: 6px;
+    margin: 0;
 }
 
 details[open] > summary {
-  background-color: #ccf;
+    background-color: #ccf;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
 }
